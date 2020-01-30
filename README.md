@@ -1,2 +1,2 @@
-# falafelsun_system
+# Falafelsun System
 System used by Falafel website
