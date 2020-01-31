@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Order for Collection - Falafel Sun</title>
+  <link rel="stylesheet" href="./css/master.css">
+  <script src="./javascript/jquery-3.4.1.min.js"></script>
+  <script src="./javascript/main.js" charset="utf-8"></script>
+  <script src="./javascript/order.js" charset="utf-8"></script>
+  <script src="./socket.io/socket.io.js"></script>
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="nav-bar-inner wrapper">
+      <a class="logo">
+        <img src="./assets/logo.png" alt="">
+      </a>
+      <div class="nav-list">
+        <a href="/" class="nav-button">Home</a>
+        <a href="#" class="nav-button">Reviews</a>
+        <a href="#" class="nav-button">Contact</a>
+      </div>
+      <div href="#" class="order">
+        <h1>Order for</h1>
+        <a href="#" class="order-collect">
+          <p>Collection</p>
+        </a>
+        <a href="#" class="order-delivery">
+          <p>Delivery</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero min">
+    <div class="hero-form wrapper">
+      <div class="menu">
+
+      </div>
+      <div class="item">
+
+      </div>
+      <div class="cart">
+
+      </div>
+    </div>
+    <div class="loading">
+      <div class="loading-container">
+        <div class="loading-balls">
+          <div class="ball">
+
+          </div>
+          <div class="ball">
+
+          </div>
+          <div class="ball">
+
+          </div>
+        </div>
+        <p>loading
+          <script type="text/javascript">
+            generateLoading();
+          </script>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer flex-3s wrapper">
+    <ul class="column-3s" id="footer-navigation">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="reviews.html">Reviews</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="order.html">Order</a>
+      </li>
+    </ul>
+    <ul class="column-3s" id="footer-contact">
+      <li>
+        <a href="https://www.instagram.com/falafelsunvegan/"><img src="" alt="">Instagram</a>
+      </li>
+      <li>
+        <a href="https://falafelsun.com/"><img src="" alt="">Colchester Website</a>
+      </li>
+    </ul>
+    <ul class="column-3s" id="footer-notes">
+      <li>
+        <a href="https://www.openstreetmap.org/#map=17/51.73322/0.47377">All map images and dynamic maps were obtained with OpenStreetMap.org</a>
+      </li>
+    </ul>
+
+  </footer>
+
+  <div class="templates" hidden>
+    <div class="menu-item">
+      <img class="icon" src="" alt="">
+      <h1 class="title">Item Name</h1>
+    </div>
+  </div>
+  <script>
+    var socket = io();
+  </script>
+</body>
