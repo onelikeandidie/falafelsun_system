@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <title>Falafel Sun</title>
   <link rel="stylesheet" href="./css/master.css">
-  <script src="./javascript/jquery-3.4.1.min.js"></script>
-  <script src="./javascript/main.js" charset="utf-8"></script>
-  <script src="./socket.io/socket.io.js"></script>
   <link rel="shortcut icon" href="favicon.png">
 </head>
 
@@ -103,11 +100,7 @@
 
           </div>
         </div>
-        <p>loading
-          <script type="text/javascript">
-            generateLoading();
-          </script>
-        </p>
+        <p>loading</p>
       </div>
     </div>
   </div>
@@ -141,9 +134,12 @@
     </ul>
 
   </footer>
-<script>
-  var socket = io();
-</script>
+
+  <script src="./javascript/main.js" charset="utf-8"></script>
+  <script src="./socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
 </body>
 
 </html>
