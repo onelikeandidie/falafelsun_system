@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="./css/master.css">
   <script src="./javascript/jquery-3.4.1.min.js"></script>
   <script src="./javascript/main.js" charset="utf-8"></script>
-  <script src="./socket.io/socket.io.js"></script>
   <link rel="shortcut icon" href="favicon.png">
 </head>
 
@@ -18,13 +17,13 @@
         <img src="./assets/logo.png" alt="">
       </a>
       <div class="nav-list">
-        <a href="#" class="nav-button">Home</a>
+        <a href="/" class="nav-button">Home</a>
         <a href="#" class="nav-button">Reviews</a>
         <a href="#" class="nav-button">Contact</a>
       </div>
       <div href="#" class="order">
         <h1>Order for</h1>
-        <a href="#" class="order-collect">
+        <a href="/order" class="order-collect">
           <p>Collection</p>
         </a>
         <a href="#" class="order-delivery">
@@ -141,9 +140,6 @@
     </ul>
 
   </footer>
-<script>
-  var socket = io();
-</script>
 </body>
 
 </html>

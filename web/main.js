@@ -10,6 +10,10 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/order', function(req, res){
+  res.sendFile(__dirname + '/order.html');
+});
+
 io.on('connection', function(socket){
   console.log('poo user connected');
   socket.on('disconnect', function(){
