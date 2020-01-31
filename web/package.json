@@ -1,0 +1,28 @@
+{
+  "name": "falafel-sun-web-system",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oursickle/falafelsun_system.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "socket"
+  ],
+  "author": "Pedro Pires",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Oursickle/falafelsun_system/issues"
+  },
+  "homepage": "https://github.com/Oursickle/falafelsun_system#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
