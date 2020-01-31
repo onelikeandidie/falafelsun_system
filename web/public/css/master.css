@@ -20,6 +20,9 @@ a {
     height: 100px;
     padding-bottom: 8px;
   }
+  .nav-bar .order {
+    flex: 0 0 300px !important;
+  }
   .nav-bar .nav-bar-inner {
     flex-direction: row;
     height: 100%;
