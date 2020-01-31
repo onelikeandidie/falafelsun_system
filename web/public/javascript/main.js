@@ -35,6 +35,17 @@ $(".location").forEach((location) => {
   }
 })
 
+window.onscroll = function() {
+  console.log(window.scrollY);
+  if (window.innerWidth > 1080) {
+    if (window.scrollY > 100) {
+      $(".nav-bar").classList.add("small");
+    } else {
+      $(".nav-bar").classList.remove("small");
+    }
+  }
+}
+
 function generateLoading() {
   console.log("Random message is being generated");
 
