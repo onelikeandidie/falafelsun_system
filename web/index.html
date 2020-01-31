@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <title>Falafel Sun</title>
   <link rel="stylesheet" href="./css/master.css">
-  <script src="./javascript/jquery-3.4.1.min.js"></script>
-  <script src="./javascript/main.js" charset="utf-8"></script>
   <link rel="shortcut icon" href="favicon.png">
 </head>
 
@@ -36,7 +34,7 @@
     <div class="hero-map" style="background-image: url(./assets/vectormap.svg)" alt="">
       <div class="hoverme" style="left: 4.3%; top: 23%; transform: rotate(-12deg); fill: #c52432">
       </div>
-      <div class="location" id="indoor" style="left:23.8%;top:25%;">
+      <div class="location" id="indoor">
         <a href="#" class="dot">
         </a>
         <div class="text">
@@ -50,7 +48,7 @@
           </div>
         </div>
       </div>
-      <div class="location" id="high street" style="left:68.6%;top:65%;">
+      <div class="location" id="high-street" style="">
         <a href="#" class="dot">
         </a>
         <div class="text">
@@ -77,7 +75,7 @@
         <div class="map-image" style="background-image:url(./assets/indoormap.png )">
         </div>
       </div>
-      <div class="location" id="high street">
+      <div class="location" id="high-street">
         <div class="text">
           <h3>Falafel Sun</h3>
           <h1>High Street</h1>
@@ -102,11 +100,7 @@
 
           </div>
         </div>
-        <p>loading
-          <script type="text/javascript">
-            generateLoading();
-          </script>
-        </p>
+        <p>loading</p>
       </div>
     </div>
   </div>
@@ -140,6 +134,12 @@
     </ul>
 
   </footer>
+  
+  <script src="./javascript/main.js" charset="utf-8"></script>
+  <script src="./socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
 </body>
 
 </html>
