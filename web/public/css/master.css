@@ -265,6 +265,14 @@ a {
   .hero-map {
     visibility: visible;
   }
+  .hero-map .location#indoor {
+    left: 23.8%;
+    top: 25%;
+  }
+  .hero-map .location#high-street {
+    left: 68.6%;
+    top: 65%;
+  }
 
   .hero-alternative {
     visibility: hidden;
@@ -285,9 +293,24 @@ a {
     visibility: visible;
   }
 }
+@media screen and (min-width: 1366px) {
+  .hero-map {
+    width: 100% !important;
+  }
+  .hero-map .location#indoor {
+    left: 50%;
+    top: 50%;
+    transform: translate(-26vw, -14vw);
+  }
+  .hero-map .location#high-street {
+    left: 50%;
+    top: 50%;
+    transform: translate(19.5vw, 9vw);
+  }
+}
 .hero-map {
   flex: 1 1 0;
-  width: 100%;
+  width: 1366px;
   height: 800px;
   opacity: 0;
   transition: opacity 0.3s ease-out;
