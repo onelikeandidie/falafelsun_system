@@ -8,6 +8,9 @@ var loading_messages = [
 
 let $ = function(query) {
   let result = document.querySelectorAll(query);
+  if (result.length === 0) {
+    return;
+  }
   if (result.length > 1) {
     return result;
   }
