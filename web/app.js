@@ -6,21 +6,21 @@ var io = require('socket.io')(http);
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.get('/', function(req, res){
+app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/order', function(req, res){
+app.get('/order', function(req, res) {
   res.sendFile(__dirname + '/order.html');
 });
 
-io.on('connection', function(socket){
+io.on('connection', function(socket) {
   console.log('poo user connected');
-  socket.on('disconnect', function(){
+  socket.on('disconnect', function() {
     console.log('poo user disconnected');
   });
 });
 
-http.listen(3000, function(){
+http.listen(3000, function() {
   console.log('listening on *:3000');
 });

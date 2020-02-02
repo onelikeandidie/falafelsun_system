@@ -5,10 +5,6 @@
   <meta charset="utf-8">
   <title>Order for Collection - Falafel Sun</title>
   <link rel="stylesheet" href="./css/master.css">
-  <script src="./javascript/jquery-3.4.1.min.js"></script>
-  <script src="./javascript/main.js" charset="utf-8"></script>
-  <script src="./javascript/order.js" charset="utf-8"></script>
-  <script src="./socket.io/socket.io.js"></script>
   <link rel="shortcut icon" href="favicon.png">
 </head>
 
@@ -24,7 +20,7 @@
         <a href="#" class="nav-button">Contact</a>
       </div>
       <div href="#" class="order">
-        <h1>Order for</h1>
+        <!-- <h1>Order for</h1> -->
         <a href="#" class="order-collect">
           <p>Collection</p>
         </a>
@@ -104,6 +100,10 @@
       <h1 class="title">Item Name</h1>
     </div>
   </div>
+
+  <script src="/javascript/main.js" charset="utf-8"></script>
+  <script src="/javascript/order.js" charset="utf-8"></script>
+  <script src="/javascript/socket.io.js"></script>
   <script>
     var socket = io();
   </script>
