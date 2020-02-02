@@ -5,7 +5,7 @@
   "type": "Falafel",
   "price": 5.00,
   "ingredients": ["Letuce", "Tomato", "Onion", "Red Cabage", "White Cabbage", "Cucumber", "Sweet Peppers", "Gerkins"],
-  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup"],
+  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup", "Hot Chilli"],
   "options": [{
     "name": "Hummus",
     "price": 0.00
@@ -17,7 +17,7 @@
   "type": "Falafel",
   "price": 6.00,
   "ingredients": ["Letuce", "Tomato", "Onion", "Red Cabage", "White Cabbage", "Cucumber", "Sweet Peppers", "Gerkins"],
-  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup"],
+  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup", "Hot Chilli"],
   "options": []
 }, {
   "name": "Falafel Box",
@@ -26,7 +26,7 @@
   "type": "Falafel",
   "price": 6.00,
   "ingredients": ["Letuce", "Tomato", "Onion", "Red Cabage", "White Cabbage", "Cucumber", "Sweet Peppers", "Gerkins"],
-  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup"],
+  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup", "Hot Chilli"],
   "options": []
 }, {
   "name": "3 Falafel Balls",
