@@ -256,10 +256,38 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
+  box-shadow: 0 0 8px #323232;
+}
+.hero-map .location a.dot::after {
+  content: " ";
+  position: absolute;
+  animation-name: closed;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  top: -4px;
+  left: -4px;
+  width: 28px;
+  height: 28px;
+  border-color: #c52432;
+  border-width: 6px;
+  border-style: solid;
+  border-radius: 50%;
+  z-index: -1;
+}
+.hero-map .location h1,
+.hero-map .location h3 {
+  text-shadow: 1px 1px 2px #323232;
+}
+.hero-map .location.open a.dot::after {
+  border-color: #0b7a1e;
+  animation-name: blin;
 }
 .hero-map .location .text {
   display: inline-block;
   padding: 10px;
+  border-radius: 6px;
   margin-left: 40px;
   color: #F2F3F4;
 }
@@ -278,6 +306,9 @@ a {
 .hero-map .location:hover .text .details {
   max-height: 200px;
   transition: max-height 0.3s ease-out;
+}
+.hero-map .location:hover a.dot::after {
+  visibility: hidden;
 }
 
 .hero-alternative {
@@ -429,20 +460,6 @@ a {
   background-position: center;
   background-size: 150%;
 }
-.hoverme {
-  position: absolute;
-  color: #c52432;
-  fill: #c52432;
-  background-image: url("../assets/hoverme_down.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40px;
-  width: 400px;
-  z-index: 3;
-  opacity: 0;
-  transition: opacity 0.3s ease-out 3s;
-}
-
 @media screen and (min-width: 1080px) {
   .flex-3s {
     display: flex;

@@ -6,6 +6,26 @@ var loading_messages = [
   "Frying up some parsnip chips"
 ];
 
+var indoor_open = new Array(7);
+indoor_open[0] = false;
+indoor_open[1] = false;
+indoor_open[2] = true;
+indoor_open[3] = true;
+indoor_open[4] = true;
+indoor_open[5] = true;
+indoor_open[6] = true;
+
+var highsteet_open = new Array(7);
+highsteet_open[0] = false;
+highsteet_open[1] = false;
+highsteet_open[2] = true
+highsteet_open[3] = false;
+highsteet_open[4] = false;
+highsteet_open[5] = true;
+highsteet_open[6] = true;
+
+var d = new Date();
+
 let $ = function(query) {
   let result = document.querySelectorAll(query);
   if (result.length === 0) {
@@ -25,15 +45,6 @@ loadlocations();
 $(".hero-map").style.opacity = "1";
 $(".loading").parentElement.removeChild($(".loading"));
 $(".hero-alternative").style.opacity = "1";
-$(".hoverme").style.opacity = "1";
-
-$(".location").forEach((location) => {
-  location.onmouseover = function() {
-    if (hoverme = $(".hoverme")) {
-      hoverme.parentElement.removeChild(hoverme);
-    }
-  }
-})
 
 window.onscroll = function() {
   console.log(window.scrollY);
@@ -56,4 +67,10 @@ function generateLoading() {
 
 function loadlocations() {
   generateLoading();
+  if (indoor_open[d.getDay()]) {
+    $(".location#indoor")[0].classList.add("open");
+  }
+  if (highsteet_open[d.getDay()]) {
+    $(".location#high-street")[0].classList.add("open");
+  }
 }

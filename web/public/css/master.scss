@@ -243,7 +243,6 @@ a {
     visibility: visible;
   }
 }
-
 @media screen and (min-width: 1366px) {
   .hero-map {
     width: 100% !important;
@@ -272,7 +271,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
   display: flex;
   background-size: cover;
   background-position: center;
@@ -281,7 +279,6 @@ a {
     position: absolute;
     z-index: 2;
     border-radius: 6px;
-    overflow: hidden;
 
     a.dot {
       position: absolute;
@@ -297,11 +294,42 @@ a {
       background-position: center;
       background-repeat: no-repeat;
       display: inline-block;
+      box-shadow: 0 0 8px $primary-background-color;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        animation-name: closed;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        top: -4px;
+        left: -4px;
+        width: 28px;
+        height: 28px;
+        border-color: $brand-color;
+        border-width: 6px;
+        border-style: solid;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+
+    h1,
+    h3 {
+      text-shadow: 1px 1px 2px $primary-background-color;
+    }
+
+    &.open a.dot::after {
+      border-color: #0b7a1e;
+      animation-name: blin;
     }
 
     .text {
       display: inline-block;
       padding: 10px;
+      border-radius: 6px;
       margin-left: 40px;
       color: $primary-color;
 
@@ -323,6 +351,10 @@ a {
           max-height: 200px;
           transition: max-height 0.3s ease-out;
         }
+      }
+
+      a.dot::after {
+        visibility: hidden;
       }
     }
   }
@@ -507,20 +539,6 @@ a {
       &::after {}
     }
   }
-}
-
-.hoverme {
-  position: absolute;
-  color: $brand-color;
-  fill: $brand-color;
-  background-image: url("../assets/hoverme_down.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40px;
-  width: 400px;
-  z-index: 3;
-  opacity: 0;
-  transition: opacity 0.3s ease-out 3s;
 }
 // Flex Columns
 @media screen and (min-width: 1080px) {
