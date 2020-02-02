@@ -181,12 +181,12 @@ a {
     visibility: visible;
   }
   .hero-map .location#indoor {
-    left: 23.8%;
-    top: 25%;
+    left: 21.8%;
+    top: 27%;
   }
   .hero-map .location#high-street {
-    left: 68.6%;
-    top: 65%;
+    left: 67.6%;
+    top: 57%;
   }
 
   .hero-alternative {
@@ -215,12 +215,12 @@ a {
   .hero-map .location#indoor {
     left: 50%;
     top: 50%;
-    transform: translate(-26vw, -14vw);
+    transform: translate(-28vw, -13vw);
   }
   .hero-map .location#high-street {
     left: 50%;
     top: 50%;
-    transform: translate(19.5vw, 9vw);
+    transform: translate(17.3vw, 3vw);
   }
 }
 .hero-map {
@@ -233,7 +233,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
   display: flex;
   background-size: cover;
   background-position: center;
@@ -242,7 +241,6 @@ a {
   position: absolute;
   z-index: 2;
   border-radius: 6px;
-  overflow: hidden;
 }
 .hero-map .location a.dot {
   position: absolute;
