@@ -180,6 +180,7 @@ a {
 }
 .hero.map {
   height: 800px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1080px) {
@@ -365,6 +366,13 @@ a {
   background: #c52432;
 }
 
+.footer a {
+  padding: 4px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 1080px) {
   .footer {
     padding: 20px 0;
@@ -434,9 +442,9 @@ a {
   padding: 8px;
   border-radius: 8px;
 }
-.hero-form .menu .category > a,
+.hero-form .menu .category > h2,
 .hero-form .menu .category > p,
-.hero-form .menu .category > h2 {
+.hero-form .menu .category > a {
   display: inline-block;
 }
 .hero-form .menu .category > a {
@@ -482,8 +490,8 @@ a {
   display: block;
   color: #F2F3F4;
 }
-.hero-form .menu .category .items .item > p,
-.hero-form .menu .category .items .item > h3 {
+.hero-form .menu .category .items .item > h3,
+.hero-form .menu .category .items .item > p {
   display: inline;
 }
 .hero-form .menu .category .items .item a {
@@ -723,6 +731,73 @@ a {
 
 .title {
   color: #323232;
+}
+
+form[action="/login"],
+form[action="/register"] {
+  color: #323232;
+  font-size: 22px;
+}
+form[action="/login"] .title,
+form[action="/register"] .title {
+  text-align: center;
+  margin: 16px auto;
+}
+form[action="/login"] div,
+form[action="/register"] div {
+  margin: 16px auto;
+  width: 600px;
+  text-align: center;
+}
+form[action="/login"] div label,
+form[action="/register"] div label {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: right;
+}
+form[action="/login"] div input,
+form[action="/register"] div input {
+  color: #F2F3F4;
+  display: inline-block;
+  width: 200px;
+  font-size: 22px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #658e9c;
+  border: #658e9c solid 2px;
+}
+form[action="/login"] div input[type=submit],
+form[action="/register"] div input[type=submit] {
+  font-size: 26px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 0 #3d565e;
+}
+form[action="/login"] div input[type=submit]:hover,
+form[action="/register"] div input[type=submit]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 0 #3d565e;
+}
+form[action="/login"] a,
+form[action="/register"] a {
+  color: #F2F3F4;
+  padding: 2px 4px;
+  border-radius: 6px;
+  color: #e15a66;
+}
+form[action="/login"] a:hover,
+form[action="/register"] a:hover {
+  background: #F2F3F4;
+  text-decoration: underline;
+}
+form[action="/login"] .tip,
+form[action="/register"] .tip {
+  color: #bbc0c5;
+  text-align: center;
+  margin: 8px auto;
+  font-size: 18px;
 }
 
 .oldorders,

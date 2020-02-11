@@ -3,6 +3,7 @@ $primary-color: #F2F3F4;
 $primary-background-color: #323232;
 $brand-color: #c52432;
 $brand-color-lighten: lighten(#c52432, 16%);
+$brand-alternate-color: #658e9c;
 
 * {
   margin: 0;
@@ -214,6 +215,7 @@ a {
 
   &.map {
     height: 800px;
+    overflow: hidden;
   }
 }
 // This decides what maps the user will see depending on the screen resolution
@@ -423,6 +425,15 @@ a {
   }
 }
 // Footer
+
+.footer {
+  a {
+    padding: 4px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 @media screen and (min-width: 1080px) {
   .footer {
     padding: 20px 0;
@@ -513,9 +524,9 @@ a {
       padding: 8px;
       border-radius: 8px;
 
-      > a,
+      > h2,
        > p,
-      > h2 {
+      > a {
         display: inline-block;
       }
 
@@ -569,8 +580,8 @@ a {
             color: $primary-color;
           }
 
-          > p,
-          > h3 {
+          > h3,
+          > p {
             display: inline;
           }
 
@@ -859,6 +870,75 @@ a {
 
 .title {
   color: $primary-background-color;
+}
+
+form[action="/login"],
+form[action="/register"] {
+  color: $primary-background-color;
+  font-size: 22px;
+
+  .title {
+    text-align: center;
+    margin: 16px auto;
+  }
+
+  div {
+    margin: 16px auto;
+    width: 600px;
+    text-align: center;
+
+    label {
+      display: inline-block;
+      width: 200px;
+      padding: 8px;
+      border-radius: 8px;
+      text-align: right;
+    }
+
+    input {
+      color: $primary-color;
+      display: inline-block;
+      width: 200px;
+      font-size: 22px;
+      padding: 8px;
+      border-radius: 8px;
+      background: $brand-alternate-color;
+      border: $brand-alternate-color solid 2px;
+    }
+
+    input[type="submit"] {
+      font-size: 26px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 0 0 darken($brand-alternate-color, 20%);
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 0 darken($brand-alternate-color, 20%);
+      }
+    }
+  }
+
+  a {
+    // background: $brand-color;
+    color: $primary-color;
+    padding: 2px 4px;
+    border-radius: 6px;
+    color: $brand-color-lighten;
+    // border: solid transparent 2px;
+    &:hover {
+      background: $primary-color;
+      text-decoration: underline;
+      // border: solid $brand-color 2px;
+    }
+  }
+
+  .tip {
+    color: darken($primary-color,20%);
+    text-align: center;
+    margin: 8px auto;
+    font-size: 18px;
+  }
 }
 
 .oldorders,

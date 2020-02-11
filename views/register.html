@@ -11,27 +11,33 @@
     {% include "navbar.html" %}
     <div class="hero min">
       <div class="wrapper">
-        <h1>Register</h1>
         <form action="/register" method="post">
+          <h1 class="title">Register</h1>
+          <p class="tip">To order you must be registered with an account.</p>
           <div>
             <label>Name:</label>
             <input required="required" type="text" name="name"/>
+            <p class="tip">This is the name that is going to appear on your orders.</p>
           </div>
           <div>
             <label>Username:</label>
-            <input required="required" type="text" name="username"/>
+            <input required="required" type="text" name="username" minlength="8" maxlength="16"/>
+            <p class="tip">You will login with this username. Mininmum of 8 charaters long.</p>
           </div>
           <div>
             <label>Password:</label>
-            <input required="required" type="password" name="password"/>
+            <input required="required" type="password" name="password" minlength="8" maxlength="16"/>
+            <p class="tip">Mininmum of 8 charaters long. Don't forget it.</p>
           </div>
           <div>
             <label>Phone:</label>
-            <input required="required" type="tel" name="phone"/>
+            <input required="required" type="tel" name="phone" minlength="9" maxlength="10"/>
+            <p class="tip">When your order is ready for pickup we will try to call you.</p>
           </div>
           <div>
             <label>Email:</label>
             <input type="text" name="email" placeholder="Optional"/>
+            <p class="tip">Your email is optional. If you enter your email you can recieve offers, secret item codes and other promotions.</p>
           </div>
           <div>
             <input type="submit" value="Register"/>

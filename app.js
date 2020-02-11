@@ -136,7 +136,7 @@ app.get('/register', function(req, res) {
   if (req.user) {
     res.redirect('/order');
   } else {
-    res.render('/register')
+    res.render('register.html');
   }
 });
 
