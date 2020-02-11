@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Falafel Sun</title>
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+
+  <body>
+    {% include "navbar.html" %}
+    {# {% include "profilebar.html" %} #}
+    <div class="hero map">
+      <div class="hero-map" style="background-image: url('/assets/vectormap.svg')" alt="">
+        <div class="location" id="indoor">
+          <a href="#" onclick="return false;" class="dot"></a>
+          <div class="text">
+            <h3>Falafel Sun</h3>
+            <h1>Indoor Market</h1>
+            <p class="time"></p>
+            <div class="details">
+              <p>Expanded Menu</p>
+              <p>Order for Collection</p>
+              <p>Open all week</p>
+            </div>
+          </div>
+        </div>
+        <div class="location" id="high-street" style="">
+          <a href="#" onclick="return false;" class="dot"></a>
+          <div class="text">
+            <h3>Falafel Sun</h3>
+            <h1>High Street</h1>
+            <p class="time"></p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-alternative">
+        <div class="location" id="indoor">
+          <div class="text">
+            <h3>Falafel Sun</h3>
+            <h1>Indoor Market</h1>
+            <p class="time"></p>
+            <div class="details">
+              <p>Expanded Menu</p>
+              <p>Order for Collection</p>
+              <p>Open all week</p>
+            </div>
+          </div>
+          <a href="#" class="directions" alt="Directions to Falafel Sun Indoor Market" title="Directions to Falafel Sun Indoor Market"></a>
+          <div class="map-image" style="background-image:url('/assets/indoormap.png' )"></div>
+        </div>
+        <div class="location" id="high-street">
+          <div class="text">
+            <h3>Falafel Sun</h3>
+            <h1>High Street</h1>
+            <p class="time"></p>
+          </div>
+          <a href="#" class="directions" alt="Directions to Falafel Sun High Street" title="Directions to Falafel Sun High Street"></a>
+          <div class="map-image" style="background-image:url('/assets/highstreetmap.png' )"></div>
+        </div>
+      </div>
+      {% include "loading.html" %}
+    </div>
+    {% include "footer.html" %}
+    <script src="/javascript/main.js" charset="utf-8"></script>
+  </body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Order for Collection - Falafel Sun</title>
+    <link rel="stylesheet" href="/styles/master.css">
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+
+  <body>
+    {% include "navbar.html" %}
+    {# {% include "profilebar.html" %} #}
+    <div class="hero min">
+      <form class="hero-form wrapper" action="/order" method="post">
+        <div class="menu">
+          {# <h1>Menu</h1> #}
+        </div>
+        <div class="details">
+          {# <h1>Details</h1> #}
+          <div class="itemdetails">
+            <div class="d">
+              <h2 class="itemname">Add an item from the menu on the left.</h2>
+              <p class="description">Once added you can choose all the ingredients, sauces or other options the item has.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          {# <h1>Cart</h1> #}
+          <div class="items"></div>
+          <div class="cartinfo">
+            <p class="price"></p>
+            <p class="quantity"></p>
+          </div>
+          <div>
+            <input type="submit" value="Order"/>
+            <p class="name">in the name of
+              <span class="name">{{user.name}}</span>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    {% include "footer.html" %}
+    <template id="category" hidden="hidden">
+      <div class="category">
+        <h2>nameofcategory</h2>
+        <a href="#" onclick="togglecategory(this);return false;">
+          <p>open</p>
+        </a>
+        <div class="items"></div>
+      </div>
+    </template>
+    <template id="item" hidden="hidden">
+      <div class="item">
+        <data value="id"></data>
+        <div class="itemimg" style="background: url('imagepath')" alt=""></div>
+        <div class="nameanddescription">
+          <h3>itemname</h3>
+          <p>description</p>
+        </div>
+        <a href="#" onclick="selectitem(this);return false;">Add</a>
+      </div>
+    </template>
+    <template id="itemdetails" hidden="hidden">
+      <div class="itemdetails">
+        <data value="id"></data>
+        <div class="itemimg" style="background: url('imagepath')" alt=""></div>
+        <div class="d">
+          <div class="">
+            <h2 class="itemname">itemname</h2>
+            <p class="price">price</p>
+          </div>
+          <p class="description">description</p>
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+          </div>
+          <div class="sauces">
+            <h3>Sauces</h3>
+          </div>
+          <div class="options">
+            <h3>Options</h3>
+          </div>
+          <div class="special">
+            <h4>Special Requests</h4>
+            <p>eg. "Write an X on this wrap"</p>
+            <input type="text" name="special" placeholder="">
+          </div>
+          <a class="addtocart" href="#" onclick="addToCart(this); return false;">Add to Cart</a>
+        </div>
+      </div>
+    </template>
+    <script src="/javascript/socket.io.js"></script>
+    <script>
+      var socket = io();
+      const user = {{user.id}}
+    </script>
+    <script src="/javascript/order.js" charset="utf-8"></script>
+  </body>
+
+</html>

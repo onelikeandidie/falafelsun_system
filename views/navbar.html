@@ -1,0 +1,49 @@
+<div class="nav-bar">
+  <div class="nav-bar-inner wrapper">
+    <a class="logo">
+      <img src="/logo.png" alt="">
+    </a>
+    <div class="nav-list">
+      <a href="/" class="nav-button">Home</a>
+      {% if user %}
+        <a href="/contact" class="nav-button">Contact</a>
+      {% endif %}
+      <a href="/orders" class="nav-button">Orders</a>
+    </div>
+    <div class="order">
+      <!-- <h1>Order for</h1> -->
+      <a href="/order" class="order-collect">
+        <p>Collection</p>
+      </a>
+      <!-- <a href="#" class="order-delivery"> <p>Delivery</p> </a> -->
+    </div>
+  </div>
+  <script type="text/javascript">
+    let portablequery = function (query) {
+      let result = document.querySelectorAll(query);
+      if (result.length === 0) {
+        return;
+      }
+      if (result.length > 1) {
+        return result;
+      }
+      result[0].forEach = function (callback) {
+        if (callback) 
+          callback(result[0]);
+        }
+      return result[0];
+    };
+
+    window.onscroll = function () {
+      // console.log(window.scrollY);
+      if (window.innerWidth > 1080) {
+        if (window.scrollY > 100) {
+          portablequery(".nav-bar").classList.add("small");
+        } else {
+          portablequery(".nav-bar").classList.remove("small");
+        }
+      }
+    }
+  </script>
+  {% include "profilebar.html" %}
+</div>

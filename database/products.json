@@ -1,0 +1,99 @@
+[{
+  "name": "Falafel Wrap",
+  "description": "Falafel Wrap with Hummus",
+  "available": true,
+  "image": "DSC_9632.jpg",
+  "type": "Falafel",
+  "price": 5.00,
+  "ingredients": ["Letuce", "Tomato", "Onion", "Red Cabage", "White Cabbage", "Cucumber", "Sweet Peppers", "Gerkins"],
+  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup", "Hot Chilli"],
+  "options": [{
+    "name": "Hummus",
+    "default": true,
+    "price": 0.00
+  }, {
+    "name": "Gluten-free",
+    "default": false,
+    "price": 0.00
+  }, {
+    "name": "Holloumi",
+    "default": false,
+    "price": 1.00
+  }]
+}, {
+  "name": "Salad Box",
+  "description": "Salad Box with Hummus",
+  "available": true,
+  "image": "DSC_9638.jpg",
+  "type": "Falafel",
+  "price": 6.00,
+  "ingredients": ["Letuce", "Tomato", "Onion", "Red Cabage", "White Cabbage", "Cucumber", "Sweet Peppers", "Gerkins"],
+  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup", "Hot Chilli"],
+  "options": []
+}, {
+  "name": "Falafel Box",
+  "description": "Falafel Box with Hummus and Parsip Chips",
+  "available": true,
+  "image": "DSC_9638.jpg",
+  "type": "Falafel",
+  "price": 6.00,
+  "ingredients": ["Letuce", "Tomato", "Onion", "Red Cabage", "White Cabbage", "Cucumber", "Sweet Peppers", "Gerkins"],
+  "sauces": ["Tzaziki", "Cocunut Yogurt Mint", "Tahina", "Vegan Mayo", "Ketchup", "Hot Chilli"],
+  "options": []
+}, {
+  "name": "3 Falafel Balls",
+  "description": "Falafel Balls with Hummus and Pita",
+  "available": true,
+  "image": "DSC_9564.jpg",
+  "type": "Falafel",
+  "price": 1.90,
+  "ingredients": [],
+  "sauces": [],
+  "options": [{
+    "name": "Vegan Pesto",
+    "price": 0.30
+  }]
+}, {
+  "name": "5 Falafel Balls",
+  "description": "Falafel Balls with Hummus and Pita",
+  "available": true,
+  "image": "DSC_9564.jpg",
+  "type": "Falafel",
+  "price": 2.90,
+  "ingredients": [],
+  "sauces": [],
+  "options": [{
+    "name": "Vegan Pesto",
+    "price": 0.30
+  }]
+}, {
+  "name": "Chips",
+  "description": "Homemade Chips",
+  "available": true,
+  "image": "DSC_9687.jpg",
+  "type": "Sides",
+  "price": 2.00,
+  "ingredients": ["Salt", "Pepper", "Vinegar"],
+  "sauces": [],
+  "options": []
+}, {
+  "name": "Tomato Soup",
+  "description": "Fresh Tomato Soup",
+  "available": true,
+  "image": "DSC_9628.jpg",
+  "type": "Soup",
+  "price": 3.00,
+  "ingredients": [],
+  "sauces": [],
+  "options": []
+}, {
+  "name": "Lentil Soup",
+  "description": "Fresh Lentil Soup",
+  "available": true,
+  "image": "DSC_9628.jpg",
+  "type": "Soup",
+  "price": 3.00,
+  "ingredients": [],
+  "sauces": [],
+  "options": []
+}]
